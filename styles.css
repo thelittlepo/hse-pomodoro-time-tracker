@@ -1,0 +1,72 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+form {
+  margin-top: 45vh;
+
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+input {
+  padding-bottom: 0.15em;
+
+  transition: border-bottom 300ms ease;
+  text-align: center;
+
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+  font-size: 8vw;
+  font-weight: 600;
+
+  caret-color: rgb(255, 0, 0);
+}
+
+input:focus {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
+  outline: none;
+}
+
+input:disabled {
+  color: rgba(0, 0, 0, 0.45)
+}
+
+input::placeholder {
+  color: #000;
+
+  font-style:italic;
+}
+
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+
+  list-style: none;
+
+  text-align: center;
+  text-decoration: line-through;
+
+  opacity: 0.25;
+
+  font-size: 4vw;
+  line-height: 2;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 100vh;
+
+  transition-timing-function: ease;
+  transition-property: width;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
