@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <title>Успеватофф</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  <nav>
+    <img src="img/logo.svg" alt="Логотип">
+    <ul>
+      <li>
+        <a class="is-active" href="#timer-section">
+          Таймер
+        </a>
+      </li>
+      <li>
+        <a href="#stats-section">Статистика</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section id="timer-section">
+      <form>
+        <label for="task">
+          Чем планируете заниматься
+        </label>
+        <input
+          type="text"
+          name="task"
+          placeholder="Например, хочу написать первый пункт плана по захвату мира"
+        >
+        <label>
+          Сколько хотите потратить времени
+        </label>
+        <button class="button" type="button">25 мин</button>
+        <button class="button" type="button">5 мин</button>
+        <button class="button" type="button">1 мин</button>
+        <input class="button" type="submit" value="Запустить">
+      </form>
+    </section>
+    <section id="stats-section">
+    </section>
+    <section id="progress-section">
+    </section>
+    <footer>
+      <img src="img/timer-section.svg" alt="Картинка секции">
+    </footer>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>

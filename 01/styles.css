@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900,900i');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -19,27 +19,27 @@ input {
   text-align: center;
 
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   font-size: 8vw;
-  font-weight: 600;
+  font-weight: 900;
 
   caret-color: rgb(255, 0, 0);
-}
-
-input:focus {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.45);
-  outline: none;
-}
-
-input:disabled {
-  color: rgba(0, 0, 0, 0.45)
 }
 
 input::placeholder {
   color: #000;
 
-  font-style:italic;
+  font-style: italic;
+}
+
+input:focus {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+  outline: none;
+}
+
+input:disabled {
+  color: rgba(0, 0, 0, 0.45);
 }
 
 ul {
